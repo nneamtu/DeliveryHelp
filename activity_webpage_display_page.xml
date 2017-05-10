@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_webpage_display_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.natalie.test2.WebpageDisplayPage"
+    android:weightSum="1"
+    android:background="@color/cast_expanded_controller_text_color"
+    android:backgroundTint="@color/cast_expanded_controller_text_color">
+
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/webview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="353dp"
+            android:layout_height="193dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.98" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_weight="0.01"
+        android:weightSum="1"
+        android:background="@color/cast_expanded_controller_text_color">
+
+        <ImageButton
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/home"
+            android:id="@+id/imageButton2"
+            android:onClick="sendHomePage"
+            android:scaleType="fitCenter"
+            android:background="@color/cast_expanded_controller_text_color" />
+
+        <Space
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50" />
+
+        <ImageButton
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/pizza"
+            android:id="@+id/imageButton3"
+            android:layout_weight="0.74"
+            android:onClick="sendPizza"
+            android:scaleType="fitCenter"
+            android:background="@color/cast_expanded_controller_text_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

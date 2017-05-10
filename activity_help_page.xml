@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/cast_expanded_controller_text_color">
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/button_1"
+        android:layout_height="72dp"
+        android:backgroundTint="#b22222"
+        android:elevation="24dp"
+        android:onClick = "helpMeNow"
+        android:layout_weight="0.33" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_weight="0.12">
+
+        <Button
+            android:layout_width="189dp"
+            android:text="@string/button_2"
+            android:id="@+id/button"
+            android:layout_height="match_parent"
+            android:backgroundTint="#afeeee"
+            android:onClick = "amIAbused"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="189dp"
+            android:text="@string/button_3"
+            android:layout_height="match_parent"
+            android:backgroundTint="#afeeee"
+            android:onClick = "callTransport"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_weight="0.09">
+
+        <Button
+            android:layout_width="375dp"
+            android:text="@string/button_4"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/wallet_highlighted_text_holo_light"
+            android:onClick = "financial"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="375dp"
+            android:text="@string/button_5"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/wallet_highlighted_text_holo_light"
+            android:onClick = "services"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_weight="0.08">
+
+        <Button
+            android:layout_width="375dp"
+            android:text="@string/button_6"
+            android:layout_height="match_parent"
+            android:backgroundTint="#b0c4de"
+            android:onClick="myRights"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="375dp"
+            android:text="@string/button_7"
+            android:layout_height="match_parent"
+            android:backgroundTint="#b0c4de"
+            android:onClick="medical"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:weightSum="1"
+        android:layout_weight="0.16">
+
+        <ImageButton
+            android:layout_width="82dp"
+            app:srcCompat="@drawable/home"
+            android:id="@+id/imageButton"
+            android:layout_weight="0.04"
+            android:layout_height="67dp"
+            android:onClick="sendHomePage"
+            android:scaleType="fitCenter"
+            android:background="@color/cast_expanded_controller_text_color" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85" />
+
+        <ImageButton
+            android:layout_width="84dp"
+            android:layout_height="66dp"
+            app:srcCompat="@drawable/pizza"
+            android:id="@+id/imageButton4"
+            android:onClick="sendPizza"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.06"
+            android:background="@color/cast_expanded_controller_text_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

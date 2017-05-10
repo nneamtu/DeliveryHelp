@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:backgroundTint="@color/cast_expanded_controller_text_color">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="127dp">
+
+        <ImageView
+            android:layout_width="221dp"
+            android:layout_height="138dp"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageView2"
+            android:scaleType="centerCrop"
+            android:layout_weight="0.17" />
+
+        <Button
+            android:text="@string/about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:id="@+id/about_button"
+            android:layout_weight="0.25"
+            android:onClick = "sendDisplayAboutScreen"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:layout_width=".5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/pizza_button"
+            android:layout_weight="1"
+            android:onClick="sendPizza"
+            android:background="@drawable/pizzaback" />
+
+        <Button
+            android:layout_width=".5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/chinese_button"
+            android:layout_weight="1"
+            android:onClick="sendChinese"
+            android:background="@drawable/chinese" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:layout_width="193dp"
+            android:layout_height="match_parent"
+            android:id="@+id/mexican_button"
+            android:onClick="sendMexican"
+            android:background="@drawable/mexican" />
+
+        <Button
+            android:layout_width=".5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/burger_button"
+            android:layout_weight="1"
+            android:onClick="sendBurger"
+            android:background="@drawable/burger" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="100dp"
+        android:layout_weight="0.03"
+        android:layout_width="match_parent">
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:id="@+id/italian_button"
+            android:onClick="sendItalian"
+            android:background="@drawable/italian" />
+
+        <Button
+            android:layout_width=".5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/sushi_button"
+            android:layout_weight="1"
+            android:onClick="sendSushi"
+            android:background="@drawable/sushi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14">
+
+        <EditText
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/search_field"
+            android:ems="10"
+            android:id="@+id/edit_search" />
+
+        <Button
+            android:text="@string/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_button"
+            android:layout_weight="0.01"
+            android:onClick="sendSearch"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
